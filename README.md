@@ -456,7 +456,7 @@ TS-1264U|Q08R0|Q08X0|12/12 | ⚠️ See *2
 |TS-253D|Q05H0|QY570|2/2 |  ✅ Tested, thank you @Atomique13,@nader-eloshaiker; Requires `skip_hw_check`
 |TS-251D|Q04W1|QY570|2/2 |  
 |TS-653D|Q04O0|Q04N0|6/6 |  
-|TS-453D|Q04M0|QY581|4/4 | ⚠️ See 2
+|TS-453D|Q04M0|QY581|4/4 | ✅ Tested; thank you Andres R.; Requires `skip_hw_check`⚠️ See 2
 |TVS-951N|SAN30|SBN10|9/9|
 |TVS-951X|Q0090|Q00A0|9/9|✅ Tested
 |TS-451A|QX690|QX700|4/4 | ✅ Tested; thank you @kikakeule
@@ -516,6 +516,7 @@ TS-1264U|Q08R0|Q08X0|12/12 | ⚠️ See *2
 |TS-673|QY032|QY050|8/8 |  
 |TS-673|QY031|QY050|8/8 |  
 |TS-473|QY031|QY040|6/6 |
+|TS-877|QZ140|QZ220|8/8 |
 
 
 *1 Some or all disks LEDs are managed by other hardware (not the EC), if the model is missing 2 disks (e.g `8/10`), it's most likely the internal M.2/NVME ports that do not have an LED associated with them.\
