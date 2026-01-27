@@ -38,6 +38,8 @@
  *  v1.14: Fixed label at end of compound statement for GCC 10
  *  v1.15: Added TS-473, TS-673, TS-873 configs
  *  v1.15: Added TS-877
+ *  v1.17: Added TS-466C
+ *  v1.18: Added TES-1885U, TS-1886XU, TS-1886XU R2, TES-3085U
  */
 
 #include <linux/delay.h>
@@ -956,9 +958,9 @@ static int qnap8528_temperature_get(unsigned int sensor)
 		reg = 0x600 + sensor;
 	else if (sensor >= 5 && sensor <= 7)		/* System temp unit */
 		reg = 0x5fd + sensor;
-	else if (sensor == 0x0a)					/* Only if redandnat power */
+	else if (sensor == 0x0a)					/* Only if redundant power */
 		reg = 0x659;
-	else if (sensor == 0x0b)					/* Only if redandnat power */
+	else if (sensor == 0x0b)					/* Only if redundant power */
 		reg = 0x65c;
 	else if (sensor >= 0xf && sensor <= 0x26)	/* Env temp unit */
 		reg = 0x5f7 + sensor;
@@ -1256,7 +1258,7 @@ qnap8528_init_ret:
 
 MODULE_AUTHOR("0xGiddi <qnap8528@giddi.net>");
 MODULE_DESCRIPTION("QNAP IT8528 EC driver");
-MODULE_VERSION("1.16");
+MODULE_VERSION("1.18");
 MODULE_LICENSE("GPL");
 
 module_init(qnap8528_init);

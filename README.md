@@ -428,7 +428,7 @@ the driver may still work fine detecting it as the base model without the extra 
 |TS-1685|QY380|QY390|22/22 |
 |TES-1685-SAS|QY380|QY390|22/22 |
 |TS-977XU|QZ480|Q0060|9/9 |
-|TS-1277XU|QZ490|QZ550|12/12 |
+|TS-1277XU|QZ490|QZ550| 12/12 (in testing: 8/12)  |✅ Tested, thank you @mmastrac, ⚠️ reported notes *1 *2 for disks 9-12. 
 |TS-877XU|QZ490|QZ551|8/8 |
 |TS-1677XU|QZ491|QZ540|16/16 |
 |TS-2477XU|QZ500|Q0070|24/24 |
@@ -517,7 +517,12 @@ TS-1264U|Q08R0|Q08X0|12/12 | ⚠️ See *2
 |TS-673|QY031|QY050|8/8 |  
 |TS-473|QY031|QY040|6/6 |
 |TS-877|QZ140|QZ220|8/8 |
-
+|TS-466C|SAQ94|SBR00|6/6 | ⚠️ See 2
+|TES-1885U|QX540|QY270|6/18 | ⚠️ See *1
+|TS-1886XU|Q0471|Q04L0|18/18 |
+|TS-1886XU|Q0470|Q04L0|18/18 |
+|TS-1886XU R2|Q0B50|Q0950|18/18 |
+|TES-3085U|QX541|QY510|6/30 | ⚠️ See *1
 
 *1 Some or all disks LEDs are managed by other hardware (not the EC), if the model is missing 2 disks (e.g `8/10`), it's most likely the internal M.2/NVME ports that do not have an LED associated with them.\
 *2 Some or all of the disks do not have a present or error (green/red) LED.\
